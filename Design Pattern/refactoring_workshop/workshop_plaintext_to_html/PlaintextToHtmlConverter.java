@@ -62,9 +62,4 @@ public class PlaintextToHtmlConverter {
         result.add(line);
         convertedLine = new ArrayList<>();
     }
-
-    //oddball Solution
-//    private void pushACharacterToTheOutput() {
-//        convertedLine.add(characterToConvert);
-//    }
 }
