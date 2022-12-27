@@ -3,20 +3,14 @@ package workshop_trivia_game;
 import java.util.ArrayList;
 import java.util.List;
 
-//added generic,replace list instead of arraylist and linked list
-
-// TODO refactor me
 
 public class Game {
    private final  List<Player> players = new ArrayList<Player>();
 
-
-
    private int currentPlayer = 0;
    private boolean isGettingOutOfPenaltyBox;
-
    private final Questions questions = new Questions();
-
+   
    //Oddball solution
    // public String createRockQuestion(int index) {
    //    return "Rock Question " + index;
@@ -34,8 +28,6 @@ public class Game {
       players.add(new Player(playerName));
       System.out.println(playerName + " was added");
       System.out.println("They are player number " + players.size());
-      //deadcode
-      // return true;
    }
 
    //deadcode
@@ -68,7 +60,6 @@ public class Game {
       else 
       {
 
-         //duplicate code
          currentPlayer().move(roll);
          System.out.println(currentPlayer().name()+ "'s new location is "+ currentPlayer().place());
          System.out.println("The category is " + questions.currentQuestionCategory(currentPlayer().place()));
@@ -125,9 +116,7 @@ public class Game {
    public boolean wrongAnswer() {
       System.out.println("Question was incorrectly answered");
       System.out.println(currentPlayer().name() + " was sent to the penalty box");
-
       currentPlayer().moveToPenaltyBox();
-
       moveToNextPlayer();
       return true;
    }
