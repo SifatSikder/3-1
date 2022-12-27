@@ -44,7 +44,6 @@ public class Questions{
       else if (currentQuestionCategory(index).equals("Rock"))System.out.println(rockQuestions.remove(0));
    }
 
-   //Duplicate
    Questions.QuestionCategory currentQuestionCategory(int index) {
       return QuestionCategory.values()[index%4];
    }
