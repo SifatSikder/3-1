@@ -1,6 +1,6 @@
 1.Large Class: The class Game is handling 3 responsibilites in 1 class. So I divide the responsibility into 3 Class. Player,Game,Questions
 
-2.Oddball Solution: The function createRockQuestion() is returning a string which is ha
+2.Oddball Solution: The function createRockQuestion() is returning a string which I have dealt with deleting the method and replace Inline method
 
 3.DeadCode: The function isPlayable() is not used in the class so it is a deadcode hence i removed it.
 
