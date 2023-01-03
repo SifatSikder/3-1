@@ -2,24 +2,22 @@ package refactored_printing_management_system;
 
 import java.util.*;
 
-class SortRequest{
-    private Queue<PrintRequest> printRequestQueue;
-    private Priority priority;
+public class PrintJob {
     
-    // constructor and getters for printRequestQueue and priority
-    
+  private Queue<PrintRequest> printRequests ;
+  private PrioritySetting PrioritySetting;
 
-    private void setPriority(PrintRequest printRequest, Priority priority) {
-      // update the priority of printRequest to newPriority
-    }
-    void addRequest(PrintRequest printRequest,Priority priority) {
-      setPriority(printRequest, priority);
-      printRequestQueue.add(printRequest);
-    }
-    PrintRequest getNextRequest() {
-      return printRequestQueue.remove();
-    }
-
-    
-
+  public PrintJob(PrioritySetting PrioritySetting){
+    this.PrioritySetting = PrioritySetting;
   }
+
+  private void pullJob(){
+
+    // send a specific job to production based on the priority setting
+  }
+
+  private void print()
+  {
+    //print that job
+  }
+}
