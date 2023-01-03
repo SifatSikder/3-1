@@ -33,7 +33,4 @@ class PageSaveMode extends PrintMode {
       reduce_number_of_pages();
     }
     
-    void renderPreview() {
-      // show a preview of the updated document
-    }
   }
